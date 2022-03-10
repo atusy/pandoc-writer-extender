@@ -8,13 +8,13 @@ The default output format is html.
 
 ```sh
 > echo '***foo*** & bar' | pandoc -t writer.lua
-<p><strong><em>foo</em></strong>&amp;<sup>bar</sup></p>
+<p><strong><em>foo</em></strong> &amp; <sup>bar</sup></p>
 ```
 
 Change output format by specifying `custom-writer-format` metadata.
 
 ``` sh
 > echo '***foo*** & ^bar^' | pandoc -t writer.lua --metadata=custom-writer-format:latex
-\textbf{\emph{foo}}\&\textsuperscript{bar}
+\textbf{\emph{foo}} \& \textsuperscript{bar}
 ```
 

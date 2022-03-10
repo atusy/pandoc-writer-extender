@@ -110,7 +110,7 @@ function DisplayMath(s)
 end
 
 function Space()
-  return write(pandoc.Space())
+  return ' '
 end
 
 function SoftBreak()
